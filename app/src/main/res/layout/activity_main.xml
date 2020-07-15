@@ -7,10 +7,12 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/egosaText"
         android:layout_width="183dp"
         android:layout_height="78dp"
         android:scrollbarSize="4dp"
         android:text="egosa"
+        android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +23,7 @@
         app:layout_constraintVertical_bias="0.11" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/aviationButton"
         android:layout_width="279dp"
         android:layout_height="92dp"
         android:text="航空・機内"
@@ -31,7 +33,7 @@
         tools:layout_editor_absoluteY="236dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/hotelButton"
         android:layout_width="277dp"
         android:layout_height="88dp"
         android:text="ホテル・お店"
@@ -41,7 +43,7 @@
         tools:layout_editor_absoluteY="373dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/moveButton"
         android:layout_width="277dp"
         android:layout_height="95dp"
         android:text="移動・観光"
