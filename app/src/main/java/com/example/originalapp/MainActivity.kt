@@ -14,4 +14,6 @@ class MainActivity : AppCompatActivity() {
     private fun sample1() {
         print("sample1を表示する")
     }
+
+    // TODO: レイアウトめっちゃエラー出てるよ。要修正
 }
