@@ -15,5 +15,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, EnglishContentsActivity::class.java)
             startActivity(intent)
         }
+        hotelButton.setOnClickListener {
+            val intent = Intent(applicationContext, EnglishContentsActivity::class.java)
+            startActivity(intent)
     }
 }
