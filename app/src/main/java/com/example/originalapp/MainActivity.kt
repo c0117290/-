@@ -11,12 +11,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         aviationButton.setOnClickListener {
-            println("こんにちは！")
             val intent = Intent(applicationContext, EnglishContentsActivity::class.java)
+            intent.putExtra("title_num",0)
             startActivity(intent)
         }
         hotelButton.setOnClickListener {
             val intent = Intent(applicationContext, EnglishContentsActivity::class.java)
+            intent.putExtra("title_num",1)
+            startActivity(intent)
+        }
+        moveButton.setOnClickListener {
+            val intent = Intent(applicationContext, EnglishContentsActivity::class.java)
+            intent.putExtra("title_num",2)
             startActivity(intent)
         }
     }
