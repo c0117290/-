@@ -8,9 +8,9 @@
 
     <Button
         android:id="@+id/aviationButton"
-        android:layout_width="279dp"
-        android:layout_height="92dp"
-        android:text="航空・機内"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/airport_img"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/hotelButton"
         app:layout_constraintEnd_toEndOf="parent"

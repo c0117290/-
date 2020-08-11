@@ -18,6 +18,13 @@ class EnglishContentsActivity:AppCompatActivity() {
      */
     private fun init(key:String) {
         val title_num = intent.getIntExtra(key, 0)
+        main_text.text = "なんか書くよ"
+        en_main_text.text="haajcna"
+
+        next_button.setOnClickListener{
+            main_text.text = "なに"
+            en_main_text.text="ha"
+        }
 
         /** 条件分岐 */
         if (key === "title_num") {
