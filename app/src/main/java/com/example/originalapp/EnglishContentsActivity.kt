@@ -1,7 +1,6 @@
 package com.example.originalapp
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.english_contents_activity.*
@@ -10,7 +9,9 @@ class EnglishContentsActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.english_contents_activity)
+        //元からある機能
         init("title_num")
+        //自分で作った機能
     }
     /**
      * 前の画面から値を受け取る。
@@ -18,12 +19,21 @@ class EnglishContentsActivity:AppCompatActivity() {
      */
     private fun init(key:String) {
         val title_num = intent.getIntExtra(key, 0)
-        main_text.text = "なんか書くよ"
-        en_main_text.text="haajcna"
+        main_text.text = "お水を頂けますか?"
+        en_main_text.text ="Can I have some water"
+        t_main_text.text ="暖かい飲み物を頂けますか?"
+        tnt_main_text.text ="Could I have something hot to drink"
+        th_main_text.text ="シートを倒してもいいですか?"
+        thnt_main_text.text ="May I recline seat?"
 
         next_button.setOnClickListener{
-            main_text.text = "なに"
-            en_main_text.text="ha"
+            main_text.text = "魚料理/肉料理をお願いします"
+            en_main_text.text="I'd like fish/meat,please"
+            t_main_text.text ="オレンジジュースをください"
+            tnt_main_text.text ="I'd like orange juice, please"
+            th_main_text.text ="コーヒーをお願いします。砂糖とミルクもください。"
+            thnt_main_text.text ="Coffee, please. With some sugar and milk."
+
         }
 
         /** 条件分岐 */
